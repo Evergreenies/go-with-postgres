@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "e30c564a-118e-4667-b107-43a5cbc61558",
+		"name": "go-with-postgres",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14356711"
+	},
+	"item": [
+		{
+			"name": "/api/stock",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/stock",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"stock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stock/{id}",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/stock/1",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"stock",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/stock//delete{id}",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/stock/delete/1",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"stock",
+						"delete",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/api/new-stock",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"TCS\",\n    \"price\": 3300,\n    \"company\": \"Tata Consultency services\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{protocol}}://{{host}}:{{port}}/api/new-stock",
+					"protocol": "{{protocol}}",
+					"host": [
+						"{{host}}"
+					],
+					"port": "{{port}}",
+					"path": [
+						"api",
+						"new-stock"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
